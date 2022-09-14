@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  margin: 0.7rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  outline:none;
+  
+}
+
+
+h1,h2,h3,h4,h5,h6,ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  max-width: 22rem;
+  margin: 0 auto;
+}
+
+.dark{
+  background-color: #11172a;
+}
+
+
+@media (min-width: 1024px) {
+  header{
+    max-width: 25rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: #abb6d69f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8f9cc2;
+  border-radius: 0.5rem;
+}
+
+
+.skillActive{
+  background-color: #f3f4f6;
+}
