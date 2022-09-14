@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer>
         <Contacto />
-        <FooterContent variant={nightMode}>© Igancio Marquez</FooterContent>
+        <FooterContent variant={nightMode}>© Ignacio Marquez</FooterContent>
     </footer>
   )
 }
