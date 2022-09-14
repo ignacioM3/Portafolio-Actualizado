@@ -5,12 +5,12 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
 }
 
 a{
   text-decoration: none;
   outline:none;
-  
 }
 
 
@@ -26,6 +26,12 @@ header{
 
 .dark{
   background-color: #11172a;
+  transition: ease-in .5s;
+}
+
+.light{
+  background-color: #f3f4f6;
+  transition: ease-in .5s;
 }
 
 

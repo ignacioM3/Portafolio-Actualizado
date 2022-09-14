@@ -15,9 +15,12 @@ const Header = () => {
 
   useEffect(()=>{
     if(nightMode){
+      document.documentElement.classList.remove('light')
       document.documentElement.classList.add('dark')
+      
      }else{
       document.documentElement.classList.remove('dark')
+      document.documentElement.classList.add('light')
      }
   }, [nightMode])
 
@@ -90,8 +93,7 @@ const ImageAvatar = styled.img`
   width: 12rem;
   height: 15rem;
   border-radius: 8rem;
-  border: 3.5px solid rgba(183, 194, 243, 0.3);;
-
+  border: 3.5px solid rgba(183, 194, 243, 0.3);
 `
 const Title = styled.h3`
   color: ${props => props.variant ? Themes.dark.title : Themes.light.title};
