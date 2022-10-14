@@ -11,7 +11,9 @@ import { useEffect } from 'react'
 
 
 const Header = () => {
+
   const {nightMode, handleNight} = useProyectos()
+
 
   useEffect(()=>{
     if(nightMode){
@@ -22,11 +24,12 @@ const Header = () => {
       document.documentElement.classList.remove('dark')
       document.documentElement.classList.add('light')
      }
+     localStorage.setItem('darkMode', nightMode)
   }, [nightMode])
 
   return (
     <header>
-      <OptionContent onClick={handleNight}>
+      <OptionContent onClick={() => handleNight(!nightMode)}>
         {
           nightMode ?  <BsSun /> : <FiMoon />  
         }

@@ -7,7 +7,7 @@ const ProyectosContext = createContext()
 const ProyectoProvider = ({children}) =>{
     const [proyectos, setProyectos] = useState([])
     const [load, setLoad] = useState(false)
-    const [nightMode, setNightMode] = useState(false)
+    const [nightMode, setNightMode] = useState(localStorage.getItem('darkMode') || false)
 
     const obtenerProyectos = async () => {
         setLoad(true)
@@ -25,6 +25,7 @@ const ProyectoProvider = ({children}) =>{
 
     useEffect(() => {
        obtenerProyectos()
+       
     }, []);
 
 
