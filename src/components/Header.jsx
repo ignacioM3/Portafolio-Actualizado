@@ -47,11 +47,11 @@ const Header = () => {
           </a>
         </IconsConteiner>
       </DescriptionContent>
-
+        
       <TextDescription variant={nightMode}>
-        Bienvenido a mi portafolio! Soy desarrollador Full Stack JR en progreso constante!
+        Bienvenido a mi portafolio! Soy desarrollador Full Stack JR!
         Con ganas de emprender nuevos retos y aprender nuevas tecnologias.
-        Egresado de Digital House en noviembre 2021, actualmente me encuentro mejorando mis habilidades principalmente en React y NodeJs. Tengo como principal objetivo a futuro incursionar en el mundo del Blockchain.
+        Egresado de Digital House en noviembre 2021, actualmente me encuentro trabajando para SOFTWARE FACTORY FOR IT trabajando con Typescript aplicando TDD. Tengo como principal objetivo a futuro incursionar en el mundo del Blockchain.
       </TextDescription>
       <ConteinerContact>
         <DownloadContainer>
